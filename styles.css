@@ -359,7 +359,6 @@ h1 .h1-name {
 .form-section {
   position: relative;
   padding: clamp(3.5rem, 7vw, 6rem) clamp(1rem, 6vw, 4rem);
-  overflow: hidden;
 }
 
 .section-heading {
@@ -968,7 +967,7 @@ input::placeholder, textarea::placeholder {
 /* ===== Bees decorativas (sticker style) ===== */
 .bee-sticker {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   pointer-events: none;
 }
 
@@ -976,13 +975,41 @@ input::placeholder, textarea::placeholder {
   display: block;
   width: 100%;
   height: auto;
-  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.55));
 }
 
-.bee-sticker--tumbada { right: -2rem; bottom: -2rem; width: clamp(120px, 16vw, 220px); transform: rotate(8deg); }
-.bee-sticker--brindando { left: -1.5rem; top: 1rem; width: clamp(100px, 12vw, 180px); transform: rotate(-8deg); }
-.bee-sticker--dj { right: -1rem; top: -2rem; width: clamp(110px, 14vw, 200px); transform: rotate(6deg); }
-.bee-sticker--mareada { left: -2rem; bottom: 1rem; width: clamp(100px, 12vw, 170px); transform: rotate(-12deg); }
+/* Abeja mareada — esquina superior derecha del dress code */
+.bee-sticker--mareada {
+  right: clamp(1rem, 3vw, 3rem);
+  top: clamp(1rem, 3vw, 2.5rem);
+  width: clamp(110px, 13vw, 200px);
+  transform: rotate(-10deg);
+}
+
+/* Abeja DJ — al lado del embed de Spotify (esquina superior derecha) */
+.bee-sticker--dj {
+  right: clamp(1rem, 3vw, 3rem);
+  top: clamp(0.5rem, 3vw, 2rem);
+  width: clamp(120px, 14vw, 220px);
+  transform: rotate(6deg);
+}
+
+/* Abeja tumbada — esquina inferior derecha del FAQ */
+.bee-sticker--tumbada {
+  right: clamp(1rem, 4vw, 3rem);
+  bottom: clamp(1rem, 3vw, 2.5rem);
+  width: clamp(120px, 15vw, 230px);
+  transform: rotate(8deg);
+}
+
+/* Abeja brindando — dentro del form-copy, abajo del texto */
+.bee-sticker--brindando {
+  position: relative;
+  display: block;
+  margin: 1.6rem 0 0;
+  width: clamp(140px, 18vw, 260px);
+  transform: rotate(-4deg);
+}
 
 /* ===== Footer ===== */
 .footer {
@@ -1066,11 +1093,17 @@ input::placeholder, textarea::placeholder {
   .countdown { grid-template-columns: 1fr; }
   .guest-grid { grid-template-columns: 1fr 1fr; }
 
-  .bee-sticker--tumbada,
-  .bee-sticker--brindando,
+  .bee-sticker--mareada,
   .bee-sticker--dj,
-  .bee-sticker--mareada {
+  .bee-sticker--tumbada {
     width: clamp(80px, 22vw, 140px);
+    opacity: 0.85;
+  }
+
+  .bee-sticker--brindando {
+    width: clamp(140px, 30vw, 220px);
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .audio-toggle { width: 52px; height: 52px; }
