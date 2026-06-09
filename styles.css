@@ -259,9 +259,6 @@ h1 {
   font-size: clamp(3rem, 8vw, 6.5rem);
   line-height: 0.95;
   color: var(--paper);
-  text-shadow:
-    3px 3px 0 rgba(0, 0, 0, 0.5),
-    -1px -1px 0 rgba(255, 193, 7, 0.12);
 }
 
 h1 .h1-strike {
@@ -298,10 +295,6 @@ h1 .h1-sub {
 h1 .h1-name {
   display: block;
   color: var(--yellow);
-  text-shadow:
-    4px 4px 0 var(--bg-deep),
-    -1px -1px 0 var(--accent),
-    0 8px 30px rgba(255, 193, 7, 0.3);
 }
 
 .hero__lead {
@@ -394,7 +387,6 @@ h1 .h1-name {
   margin: 0;
   font-size: clamp(2.4rem, 5.5vw, 4.8rem);
   color: var(--paper);
-  text-shadow: 3px 3px 0 var(--bg-deep);
 }
 
 .section-heading h2::after,
@@ -539,8 +531,8 @@ h1 .h1-name {
 }
 
 @keyframes countdown-pulse {
-  0%, 100% { color: var(--yellow); transform: scale(1); text-shadow: 0 0 0 transparent; }
-  50%      { color: var(--yellow-soft); transform: scale(1.08); text-shadow: 0 0 16px rgba(255, 193, 7, 0.7); }
+  0%, 100% { color: var(--yellow); transform: scale(1); }
+  50%      { color: var(--yellow-soft); transform: scale(1.08); }
 }
 
 @keyframes countdown-pop {
@@ -577,7 +569,6 @@ h1 .h1-name {
   top: 1rem;
   color: var(--yellow);
   font-size: 1.4rem;
-  text-shadow: 0 0 8px rgba(255, 193, 7, 0.4);
 }
 
 .dresscode-rule__num {
@@ -597,7 +588,6 @@ h1 .h1-name {
 
 .dresscode-rule strong {
   color: var(--yellow);
-  text-shadow: 0 0 6px rgba(255, 193, 7, 0.3);
 }
 
 /* ===== Playlist ===== */
@@ -962,7 +952,6 @@ input::placeholder, textarea::placeholder {
   font-size: clamp(2.4rem, 5vw, 4rem);
   color: var(--yellow);
   margin: 0 0 0.6rem;
-  text-shadow: 3px 3px 0 var(--bg-deep);
 }
 
 .thank-you-panel p {
