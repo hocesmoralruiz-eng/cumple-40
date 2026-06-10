@@ -118,6 +118,68 @@ footer {
   z-index: 2;
 }
 
+/* ===== Swarm de abejas volando por encima de todo ===== */
+.bee-swarm {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.fly-bee {
+  position: absolute;
+  top: 50%;
+  left: -10vw;
+  width: clamp(50px, 7vw, 110px);
+  filter: drop-shadow(0 6px 10px rgba(0, 0, 0, 0.55));
+  animation-name: fly-path-1;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+.fly-bee img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.fly-bee--1 { top: 14%; width: clamp(60px, 8vw, 120px); animation-duration: 22s; animation-delay: -3s; animation-name: fly-path-1; }
+.fly-bee--2 { top: 32%; width: clamp(45px, 6vw, 90px); animation-duration: 28s; animation-delay: -9s; animation-name: fly-path-2; }
+.fly-bee--3 { top: 50%; width: clamp(55px, 7.5vw, 110px); animation-duration: 25s; animation-delay: -15s; animation-name: fly-path-3; }
+.fly-bee--4 { top: 68%; width: clamp(50px, 7vw, 100px); animation-duration: 30s; animation-delay: -5s; animation-name: fly-path-2; }
+.fly-bee--5 { top: 22%; width: clamp(40px, 5vw, 80px); animation-duration: 32s; animation-delay: -20s; animation-name: fly-path-3; }
+.fly-bee--6 { top: 80%; width: clamp(50px, 6.5vw, 100px); animation-duration: 24s; animation-delay: -12s; animation-name: fly-path-1; }
+.fly-bee--7 { top: 40%; width: clamp(45px, 5.5vw, 90px); animation-duration: 35s; animation-delay: -24s; animation-name: fly-path-2; }
+.fly-bee--8 { top: 60%; width: clamp(55px, 7.5vw, 105px); animation-duration: 21s; animation-delay: -14s; animation-name: fly-path-3; }
+
+@keyframes fly-path-1 {
+  0%   { transform: translate3d(-10vw, 0, 0) rotate(-5deg); }
+  20%  { transform: translate3d(18vw, -6vh, 0) rotate(8deg); }
+  40%  { transform: translate3d(42vw, 4vh, 0) rotate(-7deg); }
+  60%  { transform: translate3d(66vw, -5vh, 0) rotate(6deg); }
+  80%  { transform: translate3d(90vw, 3vh, 0) rotate(-4deg); }
+  100% { transform: translate3d(112vw, -2vh, 0) rotate(5deg); }
+}
+
+@keyframes fly-path-2 {
+  0%   { transform: translate3d(112vw, 0, 0) rotate(8deg) scaleX(-1); }
+  22%  { transform: translate3d(86vw, 7vh, 0) rotate(-9deg) scaleX(-1); }
+  46%  { transform: translate3d(58vw, -5vh, 0) rotate(10deg) scaleX(-1); }
+  70%  { transform: translate3d(30vw, 6vh, 0) rotate(-7deg) scaleX(-1); }
+  100% { transform: translate3d(-12vw, -2vh, 0) rotate(-5deg) scaleX(-1); }
+}
+
+@keyframes fly-path-3 {
+  0%   { transform: translate3d(-10vw, 0, 0) rotate(6deg); }
+  16%  { transform: translate3d(14vw, 8vh, 0) rotate(-12deg); }
+  35%  { transform: translate3d(38vw, -3vh, 0) rotate(10deg); }
+  52%  { transform: translate3d(60vw, 9vh, 0) rotate(-8deg); }
+  74%  { transform: translate3d(84vw, -6vh, 0) rotate(7deg); }
+  100% { transform: translate3d(114vw, 4vh, 0) rotate(-5deg); }
+}
+
 /* ===== Tipografía ===== */
 h1,
 h2,
@@ -1246,8 +1308,14 @@ textarea::placeholder {
 @media (prefers-reduced-motion: reduce) {
 
   .hero__bee,
-  .audio-toggle.is-playing {
+  .audio-toggle.is-playing,
+  .fly-bee {
     animation: none;
+  }
+
+  .fly-bee,
+  .bee-swarm {
+    display: none;
   }
 
   .countdown strong.pop {
