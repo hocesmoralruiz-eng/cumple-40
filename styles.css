@@ -259,6 +259,39 @@ body { position: relative; }
   animation: bee-flap 0.55s steps(8, jump-none) infinite, fly-path-2 25s linear -8s infinite;
 }
 
+.fly-bee--19 { top: 63.7%; width: clamp(35px, 7.5vw, 85px); animation: bee-flap 0.46s steps(8, jump-none) infinite, fly-path-3 23s linear -23s infinite; }
+.fly-bee--20 { top: 87.8%; width: clamp(37px, 6.9vw, 72px); animation: bee-flap 0.43s steps(8, jump-none) infinite, fly-path-3 26s linear -9s infinite; }
+.fly-bee--21 { top: 60.2%; width: clamp(52px, 5.3vw, 111px); animation: bee-flap 0.56s steps(8, jump-none) infinite, fly-path-2 33s linear -9s infinite; }
+.fly-bee--22 { top: 59.0%; width: clamp(35px, 7.5vw, 80px); animation: bee-flap 0.56s steps(8, jump-none) infinite, fly-path-1 30s linear -10s infinite; }
+.fly-bee--23 { top: 23.5%; width: clamp(45px, 4.9vw, 94px); animation: bee-flap 0.44s steps(8, jump-none) infinite, fly-path-2 31s linear -21s infinite; }
+.fly-bee--24 { top: 79.7%; width: clamp(49px, 6.6vw, 94px); animation: bee-flap 0.44s steps(8, jump-none) infinite, fly-path-3 29s linear -28s infinite; }
+.fly-bee--25 { top: 61.8%; width: clamp(46px, 6.8vw, 115px); animation: bee-flap 0.43s steps(8, jump-none) infinite, fly-path-2 27s linear -26s infinite; }
+.fly-bee--26 { top: 96.6%; width: clamp(42px, 8.0vw, 94px); animation: bee-flap 0.48s steps(8, jump-none) infinite, fly-path-2 31s linear -7s infinite; }
+.fly-bee--27 { top: 36.8%; width: clamp(43px, 7.3vw, 113px); animation: bee-flap 0.55s steps(8, jump-none) infinite, fly-path-3 25s linear -19s infinite; }
+.fly-bee--28 { top: 26.3%; width: clamp(49px, 6.0vw, 110px); animation: bee-flap 0.56s steps(8, jump-none) infinite, fly-path-2 27s linear -23s infinite; }
+.fly-bee--29 { top: 83.1%; width: clamp(36px, 5.4vw, 72px); animation: bee-flap 0.58s steps(8, jump-none) infinite, fly-path-1 32s linear -10s infinite; }
+.fly-bee--30 { top: 23.0%; width: clamp(53px, 8.0vw, 90px); animation: bee-flap 0.46s steps(8, jump-none) infinite, fly-path-3 35s linear -14s infinite; }
+.fly-bee--31 { top: 46.6%; width: clamp(43px, 5.1vw, 117px); animation: bee-flap 0.53s steps(8, jump-none) infinite, fly-path-3 28s linear -25s infinite; }
+.fly-bee--32 { top: 43.7%; width: clamp(53px, 6.1vw, 84px); animation: bee-flap 0.62s steps(8, jump-none) infinite, fly-path-2 24s linear -18s infinite; }
+.fly-bee--33 { top: 11.6%; width: clamp(36px, 7.9vw, 79px); animation: bee-flap 0.55s steps(8, jump-none) infinite, fly-path-1 33s linear -21s infinite; }
+.fly-bee--34 { top: 39.6%; width: clamp(54px, 8.5vw, 103px); animation: bee-flap 0.47s steps(8, jump-none) infinite, fly-path-3 20s linear -23s infinite; }
+.fly-bee--35 { top: 13.9%; width: clamp(52px, 7.5vw, 119px); animation: bee-flap 0.55s steps(8, jump-none) infinite, fly-path-2 23s linear -11s infinite; }
+.fly-bee--36 { top: 18.0%; width: clamp(35px, 8.3vw, 116px); animation: bee-flap 0.47s steps(8, jump-none) infinite, fly-path-1 36s linear -26s infinite; }
+.fly-bee--37 { top: 51.2%; width: clamp(38px, 8.0vw, 89px); animation: bee-flap 0.59s steps(8, jump-none) infinite, fly-path-1 36s linear -21s infinite; }
+.fly-bee--38 { top: 17.5%; width: clamp(40px, 6.7vw, 119px); animation: bee-flap 0.6s steps(8, jump-none) infinite, fly-path-2 20s linear -21s infinite; }
+.fly-bee--39 { top: 49.4%; width: clamp(38px, 8.2vw, 89px); animation: bee-flap 0.47s steps(8, jump-none) infinite, fly-path-1 27s linear -20s infinite; }
+.fly-bee--40 { top: 11.1%; width: clamp(50px, 7.8vw, 118px); animation: bee-flap 0.53s steps(8, jump-none) infinite, fly-path-3 24s linear -6s infinite; }
+.fly-bee--41 { top: 48.2%; width: clamp(52px, 5.2vw, 103px); animation: bee-flap 0.59s steps(8, jump-none) infinite, fly-path-3 33s linear -8s infinite; }
+.fly-bee--42 { top: 74.8%; width: clamp(41px, 7.4vw, 95px); animation: bee-flap 0.62s steps(8, jump-none) infinite, fly-path-3 31s linear -16s infinite; }
+.fly-bee--43 { top: 45.9%; width: clamp(42px, 5.4vw, 91px); animation: bee-flap 0.42s steps(8, jump-none) infinite, fly-path-1 27s linear -20s infinite; }
+.fly-bee--44 { top: 3.7%; width: clamp(55px, 4.7vw, 74px); animation: bee-flap 0.6s steps(8, jump-none) infinite, fly-path-3 30s linear -4s infinite; }
+.fly-bee--45 { top: 25.6%; width: clamp(50px, 5.4vw, 78px); animation: bee-flap 0.56s steps(8, jump-none) infinite, fly-path-2 35s linear -9s infinite; }
+.fly-bee--46 { top: 79.7%; width: clamp(41px, 4.9vw, 112px); animation: bee-flap 0.51s steps(8, jump-none) infinite, fly-path-2 33s linear -15s infinite; }
+.fly-bee--47 { top: 85.1%; width: clamp(36px, 7.2vw, 111px); animation: bee-flap 0.44s steps(8, jump-none) infinite, fly-path-2 32s linear -25s infinite; }
+.fly-bee--48 { top: 79.1%; width: clamp(38px, 5.5vw, 82px); animation: bee-flap 0.53s steps(8, jump-none) infinite, fly-path-1 24s linear -15s infinite; }
+.fly-bee--49 { top: 29.5%; width: clamp(42px, 8.0vw, 74px); animation: bee-flap 0.51s steps(8, jump-none) infinite, fly-path-3 23s linear -3s infinite; }
+.fly-bee--50 { top: 97.9%; width: clamp(35px, 8.4vw, 118px); animation: bee-flap 0.59s steps(8, jump-none) infinite, fly-path-2 25s linear -15s infinite; }
+
 @keyframes fly-path-1 {
   0% {
     transform: translate3d(-10vw, 0, 0) rotate(-5deg);
