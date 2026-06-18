@@ -1,5 +1,5 @@
 const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbwC4PBF31rw7ZlSRoJT8nnI2H9xSVo9ned514N1FEEMPKMNvqPSNd9F2i5C0r1x-C_l_w/exec";
-const EVENT_DATE = new Date("2026-09-01T20:00:00+02:00"); // [FECHA] placeholder — cambiar
+const EVENT_DATE = new Date("2026-07-25T19:00:00+02:00");
 const EVENT_ID = "40-hoces";
 const DRINKS_PER_PERSON = 2;
 const MAX_TOTAL_PEOPLE = 80;
