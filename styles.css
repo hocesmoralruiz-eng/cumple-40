@@ -922,6 +922,10 @@ h1 .h1-name {
   border: 3px solid var(--yellow);
 }
 
+.playlist-add {
+  margin-top: 1.5rem;
+}
+
 .playlist-embed iframe {
   display: block;
   width: 100%;
